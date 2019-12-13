@@ -3,6 +3,9 @@ font-family: 'Playfair Display', serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Lobster', cursive;
 
+body{
+    font-family: 'Raleway', sans-serif;
+}
 .container-fluid{
     padding: 0;
     margin: 0;
@@ -90,11 +93,13 @@ color: #f8512f;
 font-size: 6em;
 text-shadow: 1px 1px 5px #0a0a0a;
 }
-
-#our_story h3,
-#our_story p{
+/* create class for raleway font */
+/* #our_story h3, 
+#our_story p,
+#menu h3,
+#menu a{
     font-family: 'Raleway', sans-serif;
-}
+}*/
 
 #our_story p{
     font-weight: 300;
@@ -151,6 +156,102 @@ text-shadow: 1px 1px 5px #0a0a0a;
     margin-top: 210px;
 }
 
+#menu{
+    background-image: url('../img/black_linen.png');
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+#menu h1{
+    color:#fff;
+    font-family: 'Lobster', cursive;
+    font-size: 6em;
+    text-shadow: 1px 1px 5px #0a0a0a;
+}
+
+#menu h3{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#menu a{
+    color: #f8512f;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#menu p{
+    text-align: justify;
+    font-weight: 300;
+}
+.food{
+    background-color: #fff;
+}
+
+#menu .nav li a:hover{
+    background-color:rgba(255,255,255,0.1);
+    border-color: transparent;
+}
+
+#menu .nav-justified li a{
+    margin-bottom: -5px;
+}
+
+#menu .nav-tabs li a{
+    border: none;
+} 
+
+.contact_form{
+    background-color:#ff6633;
+    border: 1px solid;
+}
+
+.contact_form form{
+    padding: 5% 0;
+
+}
+
+.contact_form area{
+    color:#ff0d06;
+}
+
+#contact{
+    background-color: #f8512f;
+    color:#fff;
+}
+
+#contact h1{
+    font-weight: 700;
+    font-size: 4rem;
+
+}
+
+#contact_fine_print{
+    font-size: 0.825rem !important;
+    text-align: center;
+}
+
+#contact p{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.contact_bottom{
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+address{
+    font-weight: 300;
+}
+
+@media(max-width:768px){
+    .story_year{
+        font-size: 150px;
+    }
+}
 .required::after{
     content:'*';
     color:red;
